@@ -70,3 +70,24 @@ services:
         apk add --no-cache tar gzip &&
         while true; do
           echo 'Starting backup...' &&
+          tar -czf /backups/redis-backup-$(date +%Y%m%d-%H%M%S).tar.gz -C /data/redis . &&
+          echo 'Backup completed' &&
+          sleep 86400
+        done
+      "
+    networks:
+      - ktech-network
+    restart: unless-stopped
+    depends_on:
+      - redis
+
+networks:
+  ktech-network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  redis-data:
+    driver: local
