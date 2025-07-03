@@ -335,7 +335,7 @@ const Contact = () => {
                   className="bg-white p-4 rounded-lg shadow-card hover:shadow-card-hover transition-shadow cursor-pointer"
                   onClick={() => {
                     const phoneNumber = COMPANY_INFO.contact.whatsapp;
-                    const text = encodeURIComponent(`Bonjour K-TECH, je souhaiterais obtenir des informations sur: ${service}`);
+                    const text = encodeURIComponent(`Bonjour K-TECH! Je souhaite avoir des informations sur: ${service}`);
                     const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
                     
                     const whatsappUrl = isMobile
@@ -347,70 +347,101 @@ const Contact = () => {
                 >
                   <div className="flex items-center justify-between">
                     <span className="font-medium text-gray-900">{service}</span>
-                    <MessageCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <MessageCircle className="w-5 h-5 text-green-500" />
                   </div>
-                  <p className="text-sm text-gray-500 mt-2">
-                    Cliquez pour une consultation rapide
-                  </p>
                 </motion.div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="bg-primary-900 text-white section-padding">
+        {/* Map Section */}
+        <section className="bg-white section-padding">
           <div className="container-custom">
             <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
               variants={ANIMATION_VARIANTS.fadeInUp}
-              className="text-center max-w-3xl mx-auto"
+              className="text-center mb-12"
             >
-              <h3 className="text-3xl font-bold mb-6">
-                Prêt à Démarrer Votre Projet ?
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                Notre Localisation
               </h3>
-              <p className="text-xl text-gray-200 mb-8">
-                Contactez-nous dès maintenant pour un devis gratuit et personnalisé
+              <p className="text-gray-600">
+                Retrouvez-nous facilement à Douala - Bepanda
               </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => {
-                    const phoneNumber = COMPANY_INFO.contact.whatsapp;
-                    const text = encodeURIComponent(WHATSAPP_MESSAGES.quote || 'Bonjour, je souhaiterais obtenir un devis gratuit.');
-                    const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-                    
-                    const whatsappUrl = isMobile
-                      ? `whatsapp://send?phone=${phoneNumber}&text=${text}`
-                      : `https://web.whatsapp.com/send?phone=${phoneNumber}&text=${text}`;
-                    
-                    window.open(whatsappUrl, '_blank');
-                  }}
-                  className="bg-green-500 hover:bg-green-600 px-8 py-4 rounded-lg font-medium transition-colors flex items-center justify-center space-x-2"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  <span>WhatsApp Maintenant</span>
-                </motion.button>
-                
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  onClick={() => window.location.href = `tel:${COMPANY_INFO.contact.phones[0].number}`}
-                  className="bg-transparent border-2 border-white hover:bg-white hover:text-primary-900 px-8 py-4 rounded-lg font-medium transition-all flex items-center justify-center space-x-2"
-                >
-                  <Phone className="w-5 h-5" />
-                  <span>Appeler Directement</span>
-                </motion.button>
+            </motion.div>
+
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={ANIMATION_VARIANTS.fadeInUp}
+              className="bg-gray-200 rounded-xl overflow-hidden h-96 relative"
+            >
+              {/* Map Placeholder - Replace with actual Google Maps integration */}
+              <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-primary-100 to-secondary-100">
+                <div className="text-center">
+                  <MapPin className="w-16 h-16 text-primary-600 mx-auto mb-4" />
+                  <h4 className="text-xl font-bold text-gray-900 mb-2">
+                    K-TECH MULTI SERVICES
+                  </h4>
+                  <p className="text-gray-600 mb-4">
+                    {COMPANY_INFO.location.fullAddress}
+                  </p>
+                  <a
+                    href={`https://maps.google.com/?q=${COMPANY_INFO.location.coordinates.lat},${COMPANY_INFO.location.coordinates.lng}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="btn-primary"
+                  >
+                    Voir sur Google Maps
+                  </a>
+                </div>
               </div>
             </motion.div>
           </div>
         </section>
 
-        {/* WhatsApp Floating Button */}
+        {/* CTA Section */}
+        <section className="bg-gradient-to-r from-primary-600 to-secondary-600 text-white section-padding">
+          <div className="container-custom text-center">
+            <motion.div
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={ANIMATION_VARIANTS.fadeInUp}
+            >
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Prêt à Démarrer ?
+              </h2>
+              <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+                Contactez-nous maintenant pour un devis gratuit et personnalisé
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href={`https://wa.me/${COMPANY_INFO.contact.whatsapp}?text=${encodeURIComponent(WHATSAPP_MESSAGES.quote)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-accent"
+                >
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  Devis WhatsApp
+                </a>
+                <a
+                  href={`tel:${COMPANY_INFO.contact.phones[0].number}`}
+                  className="btn-outline text-white border-white hover:bg-white hover:text-primary-600"
+                >
+                  <Phone className="w-5 h-5 mr-2" />
+                  Appel Direct
+                </a>
+              </div>
+            </motion.div>
+          </div>
+        </section>
+
+        {/* Floating WhatsApp Button */}
         <WhatsAppButton />
       </div>
     </>
