@@ -124,7 +124,10 @@ const QuickContact = ({ variant = 'default', className = '' }) => {
         {contactMethods.map((method) => (
           <motion.button
             key={method.id}
-            onClick={method.action}
+            onClick={() => {
+              method.action();
+              setContactMethod(method.id);
+            }}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className={`
@@ -134,7 +137,6 @@ const QuickContact = ({ variant = 'default', className = '' }) => {
                 : 'bg-gray-50 hover:bg-gray-100 border-2 border-transparent'
               }
             `}
-            onClick={() => setContactMethod(method.id)}
           >
             <div className={`w-10 h-10 rounded-full flex items-center justify-center ${method.color}`}>
               <method.icon className="w-5 h-5" />

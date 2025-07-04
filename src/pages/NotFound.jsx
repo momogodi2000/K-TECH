@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { 
   Home, Phone, MessageCircle, Search, 
-  ArrowLeft, Tool, Smartphone, Monitor 
+  ArrowLeft, Wrench, Smartphone, Monitor 
 } from 'lucide-react';
 import SEO from '@/components/common/SEO';
 import { COMPANY_INFO, ANIMATION_VARIANTS } from '@/utils/constants';
@@ -11,7 +11,7 @@ import { COMPANY_INFO, ANIMATION_VARIANTS } from '@/utils/constants';
 const NotFound = () => {
   const quickLinks = [
     { name: 'Accueil', href: '/', icon: Home },
-    { name: 'Services', href: '/services', icon: Tool },
+    { name: 'Services', href: '/services', icon: Wrench },
     { name: 'Contact', href: '/contact', icon: Phone },
     { name: 'Devis', href: '/quote', icon: MessageCircle }
   ];
@@ -19,7 +19,7 @@ const NotFound = () => {
   const popularServices = [
     { name: 'Réparation Smartphone', href: '/services/phone-repair', icon: Smartphone },
     { name: 'Maintenance PC', href: '/services/computer-maintenance', icon: Monitor },
-    { name: 'Vidéosurveillance', href: '/services/video-surveillance', icon: Tool }
+    { name: 'Vidéosurveillance', href: '/services/video-surveillance', icon: Wrench }
   ];
 
   return (
