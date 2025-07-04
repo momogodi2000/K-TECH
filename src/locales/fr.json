@@ -1,0 +1,79 @@
+{
+  "common": {
+    "company": "K-TECH MULTI SERVICES",
+    "slogan": "Votre Partenaire Technologique de Confiance",
+    "tagline": "Solutions Innovantes, Service d'Excellence",
+    "callNow": "Appeler Maintenant",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "location": "Localisation",
+    "learnMore": "En savoir plus",
+    "getQuote": "Demander un Devis",
+    "contact": "Contact",
+    "services": "Services",
+    "about": "À Propos",
+    "home": "Accueil",
+    "quote": "Devis"
+  },
+  "hero": {
+    "title": "Services Professionnels Certifiés",
+    "description": "Solutions informatiques complètes à Douala. Maintenance PC, réparation smartphones, vidéosurveillance et design graphique. Service professionnel avec garantie.",
+    "fastService": "Service Rapide",
+    "warranty": "Garantie 3 Mois",
+    "emergency": "7j/7 Urgences",
+    "urgentCall": "Appel d'Urgence",
+    "satisfiedClients": "Clients Satisfaits",
+    "support": "Support Disponible",
+    "satisfaction": "Satisfaction Garantie"
+  },
+  "services": {
+    "maintenance": {
+      "title": "Maintenance Informatique et Réseau",
+      "description": "Dépannage, configuration et maintenance de vos systèmes informatiques"
+    },
+    "phoneRepair": {
+      "title": "Réparation et Déblocage Smartphones",
+      "description": "Réparation professionnelle toutes marques avec garantie"
+    },
+    "surveillance": {
+      "title": "Installation Caméras de Vidéosurveillance",
+      "description": "Systèmes de surveillance professionnels avec accès à distance"
+    },
+    "design": {
+      "title": "Services Infographie et Design",
+      "description": "Création graphique professionnelle pour votre image de marque"
+    }
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Nous sommes là pour vous aider",
+    "form": {
+      "name": "Nom complet",
+      "email": "Email",
+      "phone": "Téléphone",
+      "service": "Service souhaité",
+      "message": "Message",
+      "send": "Envoyer",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès!",
+      "error": "Erreur lors de l'envoi. Veuillez réessayer."
+    },
+    "info": {
+      "address": "Adresse",
+      "hours": "Heures d'ouverture",
+      "weekdays": "Lun-Ven",
+      "saturday": "Samedi",
+      "sunday": "Dimanche",
+      "emergencyOnly": "Urgences uniquement"
+    }
+  },
+  "footer": {
+    "rights": "Tous droits réservés",
+    "developedBy": "Développé avec ❤️ par",
+    "quickLinks": "Liens Rapides",
+    "followUs": "Suivez-nous",
+    "newsletter": "Newsletter",
+    "subscribe": "S'abonner",
+    "emailPlaceholder": "Votre email"
+  }
+}

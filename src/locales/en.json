@@ -1,0 +1,79 @@
+{
+  "common": {
+    "company": "K-TECH MULTI SERVICES",
+    "slogan": "Your Trusted Tech Partner",
+    "tagline": "Innovative Solutions, Excellence in Service",
+    "callNow": "Call Now",
+    "whatsapp": "WhatsApp",
+    "email": "Email",
+    "location": "Location",
+    "learnMore": "Learn More",
+    "getQuote": "Get Quote",
+    "contact": "Contact",
+    "services": "Services",
+    "about": "About",
+    "home": "Home",
+    "quote": "Quote"
+  },
+  "hero": {
+    "title": "Certified Professional Services",
+    "description": "Complete IT solutions in Douala. PC maintenance, smartphone repair, video surveillance and graphic design. Professional service with warranty.",
+    "fastService": "Fast Service",
+    "warranty": "3 Months Warranty",
+    "emergency": "24/7 Emergency",
+    "urgentCall": "Emergency Call",
+    "satisfiedClients": "Satisfied Clients",
+    "support": "Available Support",
+    "satisfaction": "Guaranteed Satisfaction"
+  },
+  "services": {
+    "maintenance": {
+      "title": "Computer and Network Maintenance",
+      "description": "Troubleshooting, configuration and maintenance of your IT systems"
+    },
+    "phoneRepair": {
+      "title": "Smartphone Repair and Unlocking",
+      "description": "Professional repair all brands with warranty"
+    },
+    "surveillance": {
+      "title": "Video Surveillance Camera Installation",
+      "description": "Professional surveillance systems with remote access"
+    },
+    "design": {
+      "title": "Graphics and Design Services",
+      "description": "Professional graphic creation for your brand image"
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We are here to help you",
+    "form": {
+      "name": "Full Name",
+      "email": "Email",
+      "phone": "Phone",
+      "service": "Desired Service",
+      "message": "Message",
+      "send": "Send",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Error sending. Please try again."
+    },
+    "info": {
+      "address": "Address",
+      "hours": "Opening Hours",
+      "weekdays": "Mon-Fri",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "emergencyOnly": "Emergency only"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved",
+    "developedBy": "Developed with ❤️ by",
+    "quickLinks": "Quick Links",
+    "followUs": "Follow Us",
+    "newsletter": "Newsletter",
+    "subscribe": "Subscribe",
+    "emailPlaceholder": "Your email"
+  }
+}
