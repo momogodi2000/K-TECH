@@ -1,0 +1,25 @@
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://www.k-tech-services.cm/sitemap.xml
+
+# Specific rules for search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block access to admin areas (if any in future)
+Disallow: /admin/
+Disallow: /api/
+Disallow: /.env
+Disallow: /dev-dist/
+
+# Allow access to important files
+Allow: /manifest.json
+Allow: /service-worker.js
+Allow: /sitemap.xml

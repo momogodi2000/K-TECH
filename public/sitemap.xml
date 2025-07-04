@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://www.k-tech-services.cm/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.k-tech-services.cm/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.k-tech-services.cm/en/" />
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k-tech-services.cm/services</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.k-tech-services.cm/services" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.k-tech-services.cm/en/services" />
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k-tech-services.cm/services/computer-maintenance</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k-tech-services.cm/services/phone-repair</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k-tech-services.cm/services/video-surveillance</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k-tech-services.cm/services/graphic-design</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k-tech-services.cm/about</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.k-tech-services.cm/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.k-tech-services.cm/en/about" />
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k-tech-services.cm/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.k-tech-services.cm/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.k-tech-services.cm/en/contact" />
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k-tech-services.cm/quote</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.k-tech-services.cm/quote" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.k-tech-services.cm/en/quote" />
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+</urlset>
