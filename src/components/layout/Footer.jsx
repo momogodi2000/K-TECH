@@ -197,7 +197,7 @@ const Footer = () => {
               © {currentYear} {COMPANY_INFO.name}. Tous droits réservés.
             </div>
             <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-6 text-sm text-gray-400">
-              <span>Développé avec ❤️ à Douala</span>
+              <span>Développé Pars Momo Yvan Avec ❤️ à Yaounde </span>
               <div className="flex items-center space-x-4">
                 <Link to="/privacy" className="hover:text-white transition-colors">
                   Confidentialité
