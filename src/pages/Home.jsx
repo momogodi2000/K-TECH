@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense } from 'react';
 import { motion } from 'framer-motion';
 import SEO from '@/components/common/SEO';
 import Hero from '@/components/sections/Hero';
@@ -10,6 +10,27 @@ import Stats from '@/components/sections/Stats';
 import FAQ from '@/components/sections/FAQ';
 import CTA from '@/components/sections/CTA';
 import WhatsAppButton from '@/components/contact/WhatsAppButton';
+
+// Simple error boundary for sections
+class SectionErrorBoundary extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { hasError: false };
+  }
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  componentDidCatch(error, info) {
+    // Optionally log error
+    // console.error(error, info);
+  }
+  render() {
+    if (this.state.hasError) {
+      return <div className="text-center text-red-600 my-8">Une erreur est survenue dans cette section.</div>;
+    }
+    return this.props.children;
+  }
+}
 
 const Home = () => {
   useEffect(() => {
@@ -30,32 +51,52 @@ const Home = () => {
         exit={{ opacity: 0 }}
         transition={{ duration: 0.5 }}
       >
-        {/* Hero Section */}
-        <Hero />
+        <SectionErrorBoundary>
+          {/* Hero Section */}
+          <Hero />
+        </SectionErrorBoundary>
         
-        {/* Stats Section */}
-        <Stats />
+        <SectionErrorBoundary>
+          {/* Stats Section */}
+          <Stats />
+        </SectionErrorBoundary>
         
-        {/* Services Section */}
-        <Services />
+        <SectionErrorBoundary>
+          {/* Services Section */}
+          <Services />
+        </SectionErrorBoundary>
         
-        {/* About Section */}
-        <About />
+        <SectionErrorBoundary>
+          {/* About Section */}
+          <About />
+        </SectionErrorBoundary>
         
-        {/* Testimonials Section */}
-        <Testimonials />
+        <SectionErrorBoundary>
+          {/* Testimonials Section */}
+          <Testimonials />
+        </SectionErrorBoundary>
         
-        {/* FAQ Section */}
-        <FAQ />
+        <SectionErrorBoundary>
+          {/* FAQ Section */}
+          <FAQ />
+        </SectionErrorBoundary>
         
-        {/* CTA Section */}
-        <CTA />
+        <SectionErrorBoundary>
+          {/* CTA Section */}
+          <CTA />
+        </SectionErrorBoundary>
         
-        {/* Contact Section */}
-        <Contact />
+        <SectionErrorBoundary>
+          {/* Contact Section */}
+          <Contact />
+        </SectionErrorBoundary>
         
-        {/* WhatsApp Floating Button */}
-        <WhatsAppButton />
+        <SectionErrorBoundary>
+          {/* WhatsApp Floating Button */}
+          <Suspense fallback={null}>
+            <WhatsAppButton />
+          </Suspense>
+        </SectionErrorBoundary>
       </motion.div>
     </>
   );
